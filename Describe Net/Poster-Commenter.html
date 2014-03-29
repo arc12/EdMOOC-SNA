@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Poster-Commenter Network Level Description</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<style type="text/css">
+table {
+   max-width: 95%;
+   border: 1px solid #ccc;
+}
+ 
+th {
+  background-color: #000000;
+  color: #ffffff;
+}
+ 
+td {
+  background-color: #dcdcdc;
+}
+</style>
+
+<h1>Poster-Commenter Network Level Description</h1>
+
+<p>The assumption of &ldquo;Poster-Commenter&rdquo; that a tie between individuals is defined by a comment on a post. This is a directed tie from the commenter to the poster. A tie is assumed if there are 1 or more comments and ties are <strong>not</strong> weighted by the number of comments. Self-commenting (loops) are ignored; self-comments may indicate a discussion with a prior commenter, which may be of interest to a more detailed look at interaction patters.</p>
+
+<p>Not all course participants are considered; only people who made a contribution to the forums appear. People may be &ldquo;isolates&rdquo; only if they made a post that never received a comment.</p>
+
+<p><strong>Individuals who withdrew (were deleted) are not counted; other analysis will rely on role information, which is not available for these people (although it could be imputed as access_group_id=4).</strong></p>
+
+<pre><code>## Saved to P-C.RData 
+</code></pre>
+
+<table><thead>
+<tr>
+<th align="left">id</th>
+<th align="center">nodes</th>
+<th align="left">edges</th>
+<th align="center">isolates</th>
+<th align="left">graph density*1000</th>
+<th align="center">diameter</th>
+<th align="left">degree</th>
+<th align="center">closeness</th>
+<th align="left">betweenness</th>
+<th align="center">in degree</th>
+<th align="left">out degree</th>
+<th align="center">mutual dyads</th>
+<th align="left">asymmetric dyads</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">aiplan</td>
+<td align="center">499</td>
+<td align="left">370</td>
+<td align="center">263</td>
+<td align="left">1.4889</td>
+<td align="center">11</td>
+<td align="left">0.1096</td>
+<td align="center">0.0016</td>
+<td align="left">0.1425</td>
+<td align="center">0.1275</td>
+<td align="left">0.0912</td>
+<td align="center">43</td>
+<td align="left">283</td>
+</tr>
+<tr>
+<td align="left">astro</td>
+<td align="center">3889</td>
+<td align="left">5160</td>
+<td align="center">1677</td>
+<td align="left">0.3413</td>
+<td align="center">22</td>
+<td align="left">0.0120</td>
+<td align="center">0.0003</td>
+<td align="left">0.0231</td>
+<td align="center">0.0154</td>
+<td align="left">0.0177</td>
+<td align="center">348</td>
+<td align="left">4464</td>
+</tr>
+<tr>
+<td align="left">crit</td>
+<td align="center">4688</td>
+<td align="left">2446</td>
+<td align="center">2898</td>
+<td align="left">0.1113</td>
+<td align="center">31</td>
+<td align="left">0.0096</td>
+<td align="center">0.0001</td>
+<td align="left">0.0317</td>
+<td align="center">0.0112</td>
+<td align="left">0.0131</td>
+<td align="center">129</td>
+<td align="left">2187</td>
+</tr>
+<tr>
+<td align="left">edc</td>
+<td align="center">2544</td>
+<td align="left">3517</td>
+<td align="center">917</td>
+<td align="left">0.5436</td>
+<td align="center">26</td>
+<td align="left">0.0180</td>
+<td align="center">0.0005</td>
+<td align="left">0.0483</td>
+<td align="center">0.0310</td>
+<td align="left">0.0219</td>
+<td align="center">198</td>
+<td align="left">3121</td>
+</tr>
+<tr>
+<td align="left">equine</td>
+<td align="center">6244</td>
+<td align="left">4940</td>
+<td align="center">3764</td>
+<td align="left">0.1267</td>
+<td align="center">16</td>
+<td align="left">0.0148</td>
+<td align="center">0.0001</td>
+<td align="left">0.0251</td>
+<td align="center">0.0250</td>
+<td align="left">0.0218</td>
+<td align="center">263</td>
+<td align="left">4414</td>
+</tr>
+<tr>
+<td align="left">intro</td>
+<td align="center">6989</td>
+<td align="left">8619</td>
+<td align="center">3313</td>
+<td align="left">0.1765</td>
+<td align="center">31</td>
+<td align="left">0.0162</td>
+<td align="center">0.0001</td>
+<td align="left">0.0340</td>
+<td align="center">0.0147</td>
+<td align="left">0.0237</td>
+<td align="center">599</td>
+<td align="left">7421</td>
+</tr>
+</tbody></table>
+
+<p>Nodes are people and edges are poster-commenter relationships. The density is the proportion of possible edges that actually exist. Dyads are node pairs; mutuality indicates commenting has been reciprocated whereas asymmetry indicates a one-way relationship. The difference between the &ldquo;edges&rdquo; column and the sum of mutual and asymmetric dyads is accounted for by self-commenging edges. Diameter is the longest path between two people, in this case the direction of edges is significant. The degree statistics give a relative measure (relative to the theoretical maximum for the network size, and comparable between courses) of the extent to which in-bound or out-bound ties are concentrated. A value of zero would imply all people have the same degree centrality. A value of 1 would indicate that one person is maximally central. AI Planning is remarkably centralised (especially as we know there are many isolates).</p>
+
+<h2>Inspect the Introductions Forums Only</h2>
+
+<pre><code>## Saved to P-C I.RData 
+</code></pre>
+
+<table><thead>
+<tr>
+<th align="left">id</th>
+<th align="center">nodes</th>
+<th align="left">edges</th>
+<th align="center">isolates</th>
+<th align="left">graph density*1000</th>
+<th align="center">diameter</th>
+<th align="left">degree</th>
+<th align="center">closeness</th>
+<th align="left">betweenness</th>
+<th align="center">in degree</th>
+<th align="left">out degree</th>
+<th align="center">mutual dyads</th>
+<th align="left">asymmetric dyads</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">aiplan</td>
+<td align="center">34</td>
+<td align="left">4</td>
+<td align="center">28</td>
+<td align="left">3.5651</td>
+<td align="center">1</td>
+<td align="left">0.0284</td>
+<td align="center">0.0032</td>
+<td align="left">0.0018</td>
+<td align="center">0.0588</td>
+<td align="left">0.0588</td>
+<td align="center">0</td>
+<td align="left">4</td>
+</tr>
+<tr>
+<td align="left">astro</td>
+<td align="center">2292</td>
+<td align="left">1265</td>
+<td align="center">1271</td>
+<td align="left">0.2409</td>
+<td align="center">33</td>
+<td align="left">0.0140</td>
+<td align="center">0.0003</td>
+<td align="left">0.0295</td>
+<td align="center">0.0238</td>
+<td align="left">0.0072</td>
+<td align="center">55</td>
+<td align="left">1155</td>
+</tr>
+<tr>
+<td align="left">crit</td>
+<td align="center">1493</td>
+<td align="left">273</td>
+<td align="center">1170</td>
+<td align="left">0.1226</td>
+<td align="center">5</td>
+<td align="left">0.0053</td>
+<td align="center">0.0001</td>
+<td align="left">0.0025</td>
+<td align="center">0.0053</td>
+<td align="left">0.0066</td>
+<td align="center">13</td>
+<td align="left">247</td>
+</tr>
+<tr>
+<td align="left">edc</td>
+<td align="center">293</td>
+<td align="left">42</td>
+<td align="center">241</td>
+<td align="left">0.4909</td>
+<td align="center">3</td>
+<td align="left">0.0116</td>
+<td align="center">0.0004</td>
+<td align="left">0.0022</td>
+<td align="center">0.0133</td>
+<td align="left">0.0099</td>
+<td align="center">4</td>
+<td align="left">34</td>
+</tr>
+<tr>
+<td align="left">equine</td>
+<td align="center">5101</td>
+<td align="left">1150</td>
+<td align="center">3967</td>
+<td align="left">0.0442</td>
+<td align="center">12</td>
+<td align="left">0.0082</td>
+<td align="center">0.0001</td>
+<td align="left">0.0115</td>
+<td align="center">0.0094</td>
+<td align="left">0.0137</td>
+<td align="center">64</td>
+<td align="left">1021</td>
+</tr>
+<tr>
+<td align="left">intro</td>
+<td align="center">4535</td>
+<td align="left">1349</td>
+<td align="center">3207</td>
+<td align="left">0.0656</td>
+<td align="center">23</td>
+<td align="left">0.0073</td>
+<td align="center">0.0001</td>
+<td align="left">0.0102</td>
+<td align="center">0.0147</td>
+<td align="left">0.0028</td>
+<td align="center">79</td>
+<td align="left">1191</td>
+</tr>
+</tbody></table>
+
+</body>
+
+</html>
+

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_role" for="node" attr.name="role" attr.type="double"/>
+  <key id="v_continent" for="node" attr.name="continent" attr.type="string"/>
+  <key id="v_country" for="node" attr.name="country" attr.type="string"/>
+  <key id="v_region" for="node" attr.name="region" attr.type="string"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="v_name">d6543205ca81671ea1a70cfd59ef3f1f21d6aef0</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">SOUTH AMERICA</data>
+      <data key="v_country">BRAZIL</data>
+      <data key="v_region">SOUTH AMERICA</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">e99fdd408b9870bcf17419d5e212c0a364a4dbd0</data>
+      <data key="v_role">2</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">UNITED KINGDOM</data>
+      <data key="v_region">UK AND IRELAND</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">9fc48549c79f359141941a894b7100de1e39933a</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">SOUTH AMERICA</data>
+      <data key="v_country">BRAZIL</data>
+      <data key="v_region">SOUTH AMERICA</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">8998e4f25f554a4951104fe3c2dd28cd5e10818f</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">NORTH AMERICA</data>
+      <data key="v_country">UNITED STATES</data>
+      <data key="v_region">NORTH AMERICA</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">cda42c92bb4633627193a5776ecbee0a303be3bc</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">SPAIN</data>
+      <data key="v_region">EUROPE</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">44d1e85e16ba3e3574fae8ed8717c25ae5e8f1bb</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">SOUTH AMERICA</data>
+      <data key="v_country">COLOMBIA</data>
+      <data key="v_region">SOUTH AMERICA</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">76d8b76eeebe0b35fd89c0eed10c42c2892e1a4d</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">NORTH AMERICA</data>
+      <data key="v_country">UNITED STATES</data>
+      <data key="v_region">NORTH AMERICA</data>
+    </node>
+    <node id="n7">
+      <data key="v_name">d4125038bd783d8f25b788ed070a0761eb2962fb</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">MIDDLE EAST</data>
+      <data key="v_country">IRAN, ISLAMIC REPUBLIC OF</data>
+      <data key="v_region">MIDDLE EAST</data>
+    </node>
+    <node id="n8">
+      <data key="v_name">43728c1dc461f1f6466daa73305f293c2f4c39b4</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">NORTH AMERICA</data>
+      <data key="v_country">MEXICO</data>
+      <data key="v_region">CENTRAL AMERICA</data>
+    </node>
+    <node id="n9">
+      <data key="v_name">49a31020735d0ad49cd3845e95be12b40597e976</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">NORTH AMERICA</data>
+      <data key="v_country">CANADA</data>
+      <data key="v_region">NORTH AMERICA</data>
+    </node>
+    <node id="n10">
+      <data key="v_name">9cde8433b63a3b0b09e4de213925b81a1f622ba5</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">ASIA</data>
+      <data key="v_country">INDIA</data>
+      <data key="v_region">INDIA</data>
+    </node>
+    <node id="n11">
+      <data key="v_name">b7548c196230520d709af466ee12e5b4800ed7f9</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">SOUTH AMERICA</data>
+      <data key="v_country">BRAZIL</data>
+      <data key="v_region">SOUTH AMERICA</data>
+    </node>
+    <node id="n12">
+      <data key="v_name">0e77bc8470116a970e897992b584f676684b537e</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">MIDDLE EAST</data>
+      <data key="v_country">IRAN, ISLAMIC REPUBLIC OF</data>
+      <data key="v_region">MIDDLE EAST</data>
+    </node>
+    <node id="n13">
+      <data key="v_name">63e1d048aa8550520ace3c3ccd39dd517e6aab76</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">SOUTH AMERICA</data>
+      <data key="v_country">BRAZIL</data>
+      <data key="v_region">SOUTH AMERICA</data>
+    </node>
+    <node id="n14">
+      <data key="v_name">caeffa1d0ad81d2589ee62973a363fc91bd27561</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">SPAIN</data>
+      <data key="v_region">EUROPE</data>
+    </node>
+    <node id="n15">
+      <data key="v_name">8a20d9b6884ea5c5bc3049a3949cf007e4d63d0c</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">TURKEY</data>
+      <data key="v_region">EUROPE</data>
+    </node>
+    <node id="n16">
+      <data key="v_name">355dd26442f0944f36f91e0053f7b0baf28bc4ee</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">NORTH AMERICA</data>
+      <data key="v_country">UNITED STATES</data>
+      <data key="v_region">NORTH AMERICA</data>
+    </node>
+    <node id="n17">
+      <data key="v_name">e466bc1aedc2cda16f5f63492577012ff6aa6a0a</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">ASIA</data>
+      <data key="v_country">PAKISTAN</data>
+      <data key="v_region">ASIA</data>
+    </node>
+    <node id="n18">
+      <data key="v_name">98c1786388aaa9c6095bad73ad5bbf35a5f36b0c</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">ASIA</data>
+      <data key="v_country">INDIA</data>
+      <data key="v_region">INDIA</data>
+    </node>
+    <node id="n19">
+      <data key="v_name">a8655d79281e9da48a94b6d366116e2a28202274</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">GERMANY</data>
+      <data key="v_region">EUROPE</data>
+    </node>
+    <node id="n20">
+      <data key="v_name">bdfce2d1eeed3ea63d734773a54e5e77806d3686</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">ASIA</data>
+      <data key="v_country">INDIA</data>
+      <data key="v_region">INDIA</data>
+    </node>
+    <node id="n21">
+      <data key="v_name">a2a7a4ab6b27a390f101a981d9c1941aa650d245</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">ASIA</data>
+      <data key="v_country">INDIA</data>
+      <data key="v_region">INDIA</data>
+    </node>
+    <node id="n22">
+      <data key="v_name">0a3b9b512b1ebc366627eb8e08f2e2a9e2e4372d</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">RUSSIAN FEDERATION</data>
+      <data key="v_region">EUROPE</data>
+    </node>
+    <node id="n23">
+      <data key="v_name">4ed17d6d397aeb47169aeb911455681d592a5985</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">ASIA</data>
+      <data key="v_country">INDIA</data>
+      <data key="v_region">INDIA</data>
+    </node>
+    <node id="n24">
+      <data key="v_name">32b497ec1c83bbe7600678e6b76868a4ca078d5f</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">UNITED KINGDOM</data>
+      <data key="v_region">UK AND IRELAND</data>
+    </node>
+    <node id="n25">
+      <data key="v_name">125166cc15b157a1ef8bd9a1ecf8657b090d08d5</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">ASIA</data>
+      <data key="v_country">SINGAPORE</data>
+      <data key="v_region">ASIA</data>
+    </node>
+    <node id="n26">
+      <data key="v_name">9f90d7b5a79fe4d22a34774a7a1f1323b300c9f0</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">ASIA</data>
+      <data key="v_country">BANGLADESH</data>
+      <data key="v_region">ASIA</data>
+    </node>
+    <node id="n27">
+      <data key="v_name">da64367ac4403fe23920f89bd894109e1458c907</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">ASIA</data>
+      <data key="v_country">INDIA</data>
+      <data key="v_region">INDIA</data>
+    </node>
+    <node id="n28">
+      <data key="v_name">a3ca0ac1a3c143b1b051fb72354d28fd5694db8a</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">RUSSIAN FEDERATION</data>
+      <data key="v_region">EUROPE</data>
+    </node>
+    <node id="n29">
+      <data key="v_name">773d6475d606597621a2a56f0787b6979c2eac8f</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">SOUTH AMERICA</data>
+      <data key="v_country">BRAZIL</data>
+      <data key="v_region">SOUTH AMERICA</data>
+    </node>
+    <node id="n30">
+      <data key="v_name">95e45f5338ca34fe1c7b7fb73d8045f38a5d3d94</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">SOUTH AMERICA</data>
+      <data key="v_country">BRAZIL</data>
+      <data key="v_region">SOUTH AMERICA</data>
+    </node>
+    <node id="n31">
+      <data key="v_name">63062150e5b5cdc4bdfafa883fcb36f504f9cadc</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">SOUTH AMERICA</data>
+      <data key="v_country">PERU</data>
+      <data key="v_region">SOUTH AMERICA</data>
+    </node>
+    <node id="n32">
+      <data key="v_name">5d2093f8f8a56a998f418f66c9766f7514ea2105</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">ITALY</data>
+      <data key="v_region">EUROPE</data>
+    </node>
+    <node id="n33">
+      <data key="v_name">9297066e8d068465cfeafb4b9470add6ef757dff</data>
+      <data key="v_role">4</data>
+      <data key="v_continent">EUROPE</data>
+      <data key="v_country">POLAND</data>
+      <data key="v_region">EUROPE</data>
+    </node>
+    <edge source="n1" target="n23">
+    </edge>
+    <edge source="n1" target="n6">
+    </edge>
+    <edge source="n0" target="n11">
+    </edge>
+    <edge source="n1" target="n19">
+    </edge>
+    <edge source="n1" target="n29">
+    </edge>
+    <edge source="n2" target="n11">
+    </edge>
+    <edge source="n1" target="n30">
+    </edge>
+    <edge source="n1" target="n31">
+    </edge>
+    <edge source="n14" target="n31">
+    </edge>
+    <edge source="n8" target="n14">
+    </edge>
+    <edge source="n1" target="n32">
+    </edge>
+    <edge source="n0" target="n2">
+    </edge>
+  </graph>
+</graphml>

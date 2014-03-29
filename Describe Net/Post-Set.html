@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Post-Set Network Level Description</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<style type="text/css">
+table {
+   max-width: 95%;
+   border: 1px solid #ccc;
+}
+ 
+th {
+  background-color: #000000;
+  color: #ffffff;
+}
+ 
+td {
+  background-color: #dcdcdc;
+}
+</style>
+
+<h1>Post-Set Network Level Description</h1>
+
+<p>The assumption of &ldquo;Poster-Set&rdquo; is that a tie between individuals is defined by the group of people who contributed a post and any comments. All these people have a tie so this is an undirected network. Ties are are <strong>not</strong> weighted by the number of comments by the same person and self-commenting (loops) are ignored.</p>
+
+<p>Not all course participants are considered; only people who made a contribution to the forums appear. People may be &ldquo;isolates&rdquo; only if they made a post that never received a comment.</p>
+
+<p><strong>Individuals who withdrew (were deleted) are not counted; other analysis will rely on role information, which is not available for these people (although it could be imputed as access_group_id=4).</strong></p>
+
+<pre><code>## Saved to P-Set.RData 
+</code></pre>
+
+<table><thead>
+<tr>
+<th align="left">id</th>
+<th align="center">nodes</th>
+<th align="left">edges</th>
+<th align="center">isolates</th>
+<th align="left">graph density*1000</th>
+<th align="center">diameter</th>
+<th align="left">degree</th>
+<th align="center">closeness</th>
+<th align="left">betweenness</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">aiplan</td>
+<td align="center">499</td>
+<td align="left">344</td>
+<td align="center">271</td>
+<td align="left">2.7686</td>
+<td align="center">9</td>
+<td align="left">0.1646</td>
+<td align="center">0.0016</td>
+<td align="left">0.1103</td>
+</tr>
+<tr>
+<td align="left">astro</td>
+<td align="center">3889</td>
+<td align="left">11402</td>
+<td align="center">1689</td>
+<td align="left">1.5082</td>
+<td align="center">12</td>
+<td align="left">0.0363</td>
+<td align="center">0.0003</td>
+<td align="left">0.0201</td>
+</tr>
+<tr>
+<td align="left">crit</td>
+<td align="center">4688</td>
+<td align="left">8163</td>
+<td align="center">2856</td>
+<td align="left">0.7430</td>
+<td align="center">12</td>
+<td align="left">0.0319</td>
+<td align="center">0.0001</td>
+<td align="left">0.0289</td>
+</tr>
+<tr>
+<td align="left">edc</td>
+<td align="center">2544</td>
+<td align="left">12351</td>
+<td align="center">918</td>
+<td align="left">3.8183</td>
+<td align="center">9</td>
+<td align="left">0.0662</td>
+<td align="center">0.0005</td>
+<td align="left">0.0283</td>
+</tr>
+<tr>
+<td align="left">equine</td>
+<td align="center">6244</td>
+<td align="left">9657</td>
+<td align="center">3823</td>
+<td align="left">0.4955</td>
+<td align="center">10</td>
+<td align="left">0.0299</td>
+<td align="center">0.0001</td>
+<td align="left">0.0165</td>
+</tr>
+<tr>
+<td align="left">intro</td>
+<td align="center">6989</td>
+<td align="left">23877</td>
+<td align="center">3346</td>
+<td align="left">0.9778</td>
+<td align="center">12</td>
+<td align="left">0.0514</td>
+<td align="center">0.0001</td>
+<td align="left">0.0235</td>
+</tr>
+</tbody></table>
+
+<p>The density is the proportion of possible edges that actually exist. Diameter is the longest path between two people, in this case the direction of edges is significant. The degree statistics give a relative measure (relative to the theoretical maximum for the network size, and comparable between courses) of the extent to which ties are concentrated. A value of zero would imply all people have the same degree centrality. A value of 1 would indicate that one person is maximally central.</p>
+
+<p>Degree, closeness and betweenness for an individual differ as follows:</p>
+
+<ul>
+<li><strong>degree</strong> is the number of ties, which can be separated to &ldquo;in&rdquo; and &ldquo;out&rdquo; for directed graphs.</li>
+<li><strong>closeness</strong> captures the distance from other nodes (paths must follow ties). The data given is calculated by neglecting the direction of ties. i.e. how close the person is to others</li>
+<li><strong>betweenness</strong> captures the extent to which paths between nodes pass through a given node (when taking the shortest path).</li>
+</ul>
+
+<h2>Inspect the Introductions Forums Only</h2>
+
+<pre><code>## Saved to P-Set I.RData 
+</code></pre>
+
+<table><thead>
+<tr>
+<th align="left">id</th>
+<th align="center">nodes</th>
+<th align="left">edges</th>
+<th align="center">isolates</th>
+<th align="left">graph density*1000</th>
+<th align="center">diameter</th>
+<th align="left">degree</th>
+<th align="center">closeness</th>
+<th align="left">betweenness</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">aiplan</td>
+<td align="center">34</td>
+<td align="left">12</td>
+<td align="center">21</td>
+<td align="left">21.3904</td>
+<td align="center">4</td>
+<td align="left">0.2027</td>
+<td align="center">0.0153</td>
+<td align="left">0.0612</td>
+</tr>
+<tr>
+<td align="left">astro</td>
+<td align="center">2292</td>
+<td align="left">6652</td>
+<td align="center">998</td>
+<td align="left">2.5336</td>
+<td align="center">11</td>
+<td align="left">0.0503</td>
+<td align="center">0.0005</td>
+<td align="left">0.0235</td>
+</tr>
+<tr>
+<td align="left">crit</td>
+<td align="center">1493</td>
+<td align="left">2630</td>
+<td align="center">929</td>
+<td align="left">2.3613</td>
+<td align="center">11</td>
+<td align="left">0.0567</td>
+<td align="center">0.0004</td>
+<td align="left">0.0221</td>
+</tr>
+<tr>
+<td align="left">edc</td>
+<td align="center">293</td>
+<td align="left">90</td>
+<td align="center">195</td>
+<td align="left">2.1039</td>
+<td align="center">14</td>
+<td align="left">0.0289</td>
+<td align="center">0.0015</td>
+<td align="left">0.0265</td>
+</tr>
+<tr>
+<td align="left">equine</td>
+<td align="center">5101</td>
+<td align="left">6026</td>
+<td align="center">3364</td>
+<td align="left">0.4633</td>
+<td align="center">10</td>
+<td align="left">0.0305</td>
+<td align="center">0.0001</td>
+<td align="left">0.0175</td>
+</tr>
+<tr>
+<td align="left">intro</td>
+<td align="center">4535</td>
+<td align="left">10080</td>
+<td align="center">2551</td>
+<td align="left">0.9805</td>
+<td align="center">14</td>
+<td align="left">0.0228</td>
+<td align="center">0.0002</td>
+<td align="left">0.0162</td>
+</tr>
+</tbody></table>
+
+<h2>Inspect Forums Except Introductions</h2>
+
+<pre><code>## Saved to P-Set noI.RData 
+</code></pre>
+
+<table><thead>
+<tr>
+<th align="left">id</th>
+<th align="center">nodes</th>
+<th align="left">edges</th>
+<th align="center">isolates</th>
+<th align="left">graph density*1000</th>
+<th align="center">diameter</th>
+<th align="left">degree</th>
+<th align="center">closeness</th>
+<th align="left">betweenness</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">aiplan</td>
+<td align="center">481</td>
+<td align="left">280</td>
+<td align="center">252</td>
+<td align="left">2.4255</td>
+<td align="center">10</td>
+<td align="left">0.1712</td>
+<td align="center">0.0017</td>
+<td align="left">0.1355</td>
+</tr>
+<tr>
+<td align="left">astro</td>
+<td align="center">2797</td>
+<td align="left">3877</td>
+<td align="center">1022</td>
+<td align="left">0.9915</td>
+<td align="center">15</td>
+<td align="left">0.0269</td>
+<td align="center">0.0004</td>
+<td align="left">0.0297</td>
+</tr>
+<tr>
+<td align="left">crit</td>
+<td align="center">3952</td>
+<td align="left">2033</td>
+<td align="center">2342</td>
+<td align="left">0.2604</td>
+<td align="center">15</td>
+<td align="left">0.0213</td>
+<td align="center">0.0002</td>
+<td align="left">0.0381</td>
+</tr>
+<tr>
+<td align="left">edc</td>
+<td align="center">2440</td>
+<td align="left">3102</td>
+<td align="center">844</td>
+<td align="left">1.0425</td>
+<td align="center">11</td>
+<td align="left">0.0326</td>
+<td align="center">0.0005</td>
+<td align="left">0.0466</td>
+</tr>
+<tr>
+<td align="left">equine</td>
+<td align="center">2851</td>
+<td align="left">3736</td>
+<td align="center">1042</td>
+<td align="left">0.9196</td>
+<td align="center">11</td>
+<td align="left">0.0588</td>
+<td align="center">0.0004</td>
+<td align="left">0.0724</td>
+</tr>
+<tr>
+<td align="left">intro</td>
+<td align="center">4374</td>
+<td align="left">6673</td>
+<td align="center">1441</td>
+<td align="left">0.6977</td>
+<td align="center">13</td>
+<td align="left">0.0373</td>
+<td align="center">0.0003</td>
+<td align="left">0.0544</td>
+</tr>
+</tbody></table>
+
+</body>
+
+</html>
+

@@ -1,0 +1,91 @@
+<style type="text/css">
+table {
+   max-width: 95%;
+   border: 1px solid #ccc;
+}
+ 
+th {
+  background-color: #000000;
+  color: #ffffff;
+}
+ 
+td {
+  background-color: #dcdcdc;
+}
+</style>
+
+Post-Set Network Level Description
+========================================================
+
+The assumption of "Poster-Set" is that a tie between individuals is defined by the group of people who contributed a post and any comments. All these people have a tie so this is an undirected network. Ties are are **not** weighted by the number of comments by the same person and self-commenting (loops) are ignored.
+
+Not all course participants are considered; only people who made a contribution to the forums appear. People may be "isolates" only if they made a post that never received a comment.
+
+__Individuals who withdrew (were deleted) are not counted; other analysis will rely on role information, which is not available for these people (although it could be imputed as access_group_id=4).__
+
+
+```{r echo=FALSE, results='hide'}
+courseIDs<-c("aiplan","astro","crit","edc","equine","intro")
+group<-""
+tie.type="P-Set" #filename prefix
+echo.flag<-TRUE #echo R source
+fig.width.default<-5
+fig.height.default<-5
+options(knitr.table.format = 'markdown')
+read_chunk("./Describe Net.R")
+```
+
+```{r INIT, echo=FALSE}
+#loads library and data from graphml
+```
+
+```{r SINGLES, echo=FALSE}
+#network level single quantities
+```
+
+```{r echo=FALSE, results='asis'}
+kable(singles.df, row.names=T, align='c')
+```
+
+The density is the proportion of possible edges that actually exist. Diameter is the longest path between two people, in this case the direction of edges is significant. The degree statistics give a relative measure (relative to the theoretical maximum for the network size, and comparable between courses) of the extent to which ties are concentrated. A value of zero would imply all people have the same degree centrality. A value of 1 would indicate that one person is maximally central.
+
+Degree, closeness and betweenness for an individual differ as follows:
+* **degree** is the number of ties, which can be separated to "in" and "out" for directed graphs.
+* **closeness** captures the distance from other nodes (paths must follow ties). The data given is calculated by neglecting the direction of ties. i.e. how close the person is to others
+* **betweenness** captures the extent to which paths between nodes pass through a given node (when taking the shortest path).
+ 
+## Inspect the Introductions Forums Only
+```{r echo=FALSE, results='hide'}
+# data for Introductions has I following the course names
+group<-"I"
+```
+
+```{r ref.label="INIT", echo=FALSE}
+#loads library and data from graphml
+```
+
+```{r ref.label="SINGLES", echo=FALSE}
+#network level single quantities
+```
+
+```{r echo=FALSE, results='asis'}
+kable(singles.df, row.names=T, align='c')
+```
+
+## Inspect Forums Except Introductions
+```{r echo=FALSE, results='hide'}
+# data for Introductions has I following the course names
+group<-"noI"
+```
+
+```{r ref.label="INIT", echo=FALSE}
+#loads library and data from graphml
+```
+
+```{r ref.label="SINGLES", echo=FALSE}
+#network level single quantities
+```
+
+```{r echo=FALSE, results='asis'}
+kable(singles.df, row.names=T, align='c')
+```

@@ -4,18 +4,18 @@ Code related to social network analysis for Coursera MOOC data. This is mostly a
 
 The data source is a MySQL database built from dumps obtained from Coursera. The courses ran in the around March 2013. Note that we had problems with character encoding that led to very slow queries. This problem was resolved by changing the database as follows:
 
-ALTER TABLE `hash_mapping` MODIFY anon_user_id varchar(120);
-ALTER TABLE `hash_mapping` MODIFY forum_user_id varchar(120);
-ALTER TABLE `hash_mapping` MODIFY session_user_id varchar(120);
-ALTER TABLE `hash_mapping` CONVERT TO CHARACTER SET utf8mb4;
-CREATE INDEX forum_user_idx ON `hash_mapping` (forum_user_id);
+> ALTER TABLE `hash_mapping` MODIFY anon_user_id varchar(120);
+> ALTER TABLE `hash_mapping` MODIFY forum_user_id varchar(120);
+> ALTER TABLE `hash_mapping` MODIFY session_user_id varchar(120);
+> ALTER TABLE `hash_mapping` CONVERT TO CHARACTER SET utf8mb4;
+> CREATE INDEX forum_user_idx ON `hash_mapping` (forum_user_id);
 
 The missing file dbConnect.R simply contains:
 
-conn<-function(schemaName=NULL){
-   return (dbConnect(MySQL.driver, user='username', dbname=schemaName, 
-                   host='localhost', password='password'))
-}
+> conn<-function(schemaName=NULL){
+>    return (dbConnect(MySQL.driver, user='username', dbname=schemaName, 
+>                    host='localhost', password='password'))
+> }
 
 General Caveats
 ------------
